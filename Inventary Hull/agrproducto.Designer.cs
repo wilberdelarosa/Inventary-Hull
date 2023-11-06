@@ -76,7 +76,7 @@
             // 
             // categoriabox
             // 
-            categoriabox.BackColor = SystemColors.ActiveBorder;
+            categoriabox.BackColor = SystemColors.ControlDark;
             categoriabox.DropDownWidth = 215;
             categoriabox.Enabled = false;
             categoriabox.FormattingEnabled = true;
@@ -156,7 +156,7 @@
             // 
             // idsuplidortxt
             // 
-            idsuplidortxt.BackColor = SystemColors.ActiveBorder;
+            idsuplidortxt.BackColor = SystemColors.ControlDark;
             idsuplidortxt.Enabled = false;
             idsuplidortxt.FormattingEnabled = true;
             idsuplidortxt.Location = new Point(510, 120);

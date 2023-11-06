@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Configuration;
 using Microsoft.Data.SqlClient;
+using System.Data;
 
 namespace Inventary_Hull
 {
@@ -47,7 +48,14 @@ namespace Inventary_Hull
         {
             using (SqlCommand command = new SqlCommand(query, GetConnection()))
             {
+                if (connection.State != ConnectionState.Open)
+                    connection.Open();
+
                 command.ExecuteNonQuery();
+
+                if (connection.State == ConnectionState.Open)
+                    connection.Close();
+
             }
         }
     }

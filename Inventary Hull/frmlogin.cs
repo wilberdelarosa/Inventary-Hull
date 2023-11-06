@@ -49,5 +49,10 @@ namespace Inventary_Hull
                 }
             }
         }
+
+        private void txtusuario_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

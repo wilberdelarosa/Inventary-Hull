@@ -38,17 +38,17 @@ namespace Inventary_Hull
             try
             {
                 using (SqlCommand command = new SqlCommand(query, databaseManager.GetConnection()))
-                    using (SqlDataReader reader = command.ExecuteReader())
+                using (SqlDataReader reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
                     {
-                        while (reader.Read())
-                        {
-                            string id = reader["id"].ToString();
-                            string tipo = reader["tipo"].ToString();
-                            string displayText = $"{id} - {tipo}";
-                            categoriabox.Items.Add(displayText);
-                        }
-                    
+                        string id = reader["id"].ToString();
+                        string tipo = reader["tipo"].ToString();
+                        string displayText = $"{id} - {tipo}";
+                        categoriabox.Items.Add(displayText);
                     }
+
+                }
             }
             catch (SqlException ex)
             {
@@ -60,7 +60,7 @@ namespace Inventary_Hull
                 databaseManager.CloseConnection();
             }
         }
-        
+
         private void PopulateSuplidorComboBox()
         {
             // Llenar el ComboBox de Suplidor aquí...
@@ -70,18 +70,18 @@ namespace Inventary_Hull
             try
             {
                 using (SqlCommand command = new SqlCommand(query, databaseManager.GetConnection()))
-               
-                    using (SqlDataReader reader = command.ExecuteReader())
+
+                using (SqlDataReader reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
                     {
-                        while (reader.Read())
-                        {
-                            string id = reader["id"].ToString();
-                            string nombre = reader["nombre"].ToString();
-                            string displayText = $"{id} - {nombre}";
-                            idsuplidortxt.Items.Add(displayText);
-                        }
-                   
+                        string id = reader["id"].ToString();
+                        string nombre = reader["nombre"].ToString();
+                        string displayText = $"{id} - {nombre}";
+                        idsuplidortxt.Items.Add(displayText);
                     }
+
+                }
             }
             catch (SqlException ex)
             {
@@ -157,9 +157,8 @@ namespace Inventary_Hull
             {
                 int stock = int.Parse(stocktxt.Text); // Validar y convertir stock a entero
 
-                string insertQuery = @"
-                    INSERT INTO producto (nombre, categoria, descripcion, stock, idsuplidor, seccion) 
-                    VALUES (@nombre, @categoria, @descripcion, @stock, @idsuplidor, @seccion)";
+                string insertQuery = "INSERT INTO producto(nombre, categoria, descripcion, stock, idsuplidor, seccion)" + 
+                    "VALUES (@nombre, @categoria, @descripcion, @stock, @idsuplidor, @seccion)";
 
                 using (SqlCommand command = new SqlCommand(insertQuery, databaseManager.GetConnection()))
                 {
@@ -177,10 +176,10 @@ namespace Inventary_Hull
 
                     command.Parameters.AddWithValue("@seccion", secciontxt.Text);
 
-                    databaseManager.GetConnection().Open();
                     command.ExecuteNonQuery();
-                    databaseManager.GetConnection().Close();
+
                 }
+
 
                 MessageBox.Show("Producto insertado correctamente.");
 
@@ -192,6 +191,7 @@ namespace Inventary_Hull
                 idsuplidortxt.SelectedIndex = -1;
                 secciontxt.Text = "";
             }
+
             catch (FormatException)
             {
                 MessageBox.Show("El stock debe ser un número entero válido.");
@@ -204,6 +204,7 @@ namespace Inventary_Hull
             {
                 MessageBox.Show("ERROR: " + ex.Message);
             }
+           
         }
 
         private void agrproducto_Load_1(object sender, EventArgs e)
