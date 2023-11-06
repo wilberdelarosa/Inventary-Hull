@@ -32,11 +32,66 @@ namespace Inventary_Hull
         private void PopulateCategoriaComboBox()
         {
             // Llenar el ComboBox de Categoría aquí...
-        }
+            categoriabox.Items.Clear();
+            string query = "SELECT id, tipo FROM categoria";
 
+            try
+            {
+                using (SqlCommand command = new SqlCommand(query, databaseManager.GetConnection()))
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            string id = reader["id"].ToString();
+                            string tipo = reader["tipo"].ToString();
+                            string displayText = $"{id} - {tipo}";
+                            categoriabox.Items.Add(displayText);
+                        }
+                    
+                    }
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show("Error al obtener categorías: " + ex.Message);
+            }
+            finally
+            {
+                // cerrar la conexión aquí.
+                databaseManager.CloseConnection();
+            }
+        }
+        
         private void PopulateSuplidorComboBox()
         {
             // Llenar el ComboBox de Suplidor aquí...
+            idsuplidortxt.Items.Clear();
+            string query = "SELECT id, nombre FROM suplidor";
+
+            try
+            {
+                using (SqlCommand command = new SqlCommand(query, databaseManager.GetConnection()))
+               
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            string id = reader["id"].ToString();
+                            string nombre = reader["nombre"].ToString();
+                            string displayText = $"{id} - {nombre}";
+                            idsuplidortxt.Items.Add(displayText);
+                        }
+                   
+                    }
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show("Error al obtener suplidores: " + ex.Message);
+            }
+            finally
+            {
+                // Asegúrate de cerrar la conexión aquí.
+                databaseManager.CloseConnection();
+            }
         }
 
         // Este evento ahora no debería limpiar y repoblar el ComboBox, puede que ni siquiera sea necesario
@@ -49,23 +104,13 @@ namespace Inventary_Hull
         {
             //PopulateCategoriaComboBox();
             //PopulateSuplidorComboBox();
-
-            categoriabox.Items.Clear();
-            string query = "SELECT id, tipo FROM categoria";
-
-            using (SqlCommand command = new SqlCommand(query, databaseManager.GetConnection()))
+            if (categoriabox.SelectedItem != null)
             {
-                using (SqlDataReader reader = command.ExecuteReader())
-                {
-                    while (reader.Read())
-                    {
-                        string id = reader["id"].ToString();
-                        string tipo = reader["tipo"].ToString();
-                        string displayText = $"{id} - {tipo}";
-                        categoriabox.Items.Add(displayText);
-                    }
-                }
+                string selectedCategory = categoriabox.SelectedItem.ToString();
+                // El resto de tu código que depende de selectedCategory viene aquí...
             }
+
+
         }
         private void stocktxt_TextChanged(object sender, EventArgs e)
         {
@@ -78,21 +123,10 @@ namespace Inventary_Hull
         }
         private void idsuplidortxt_SelectedIndexChanged(object sender, EventArgs e)
         {
-            idsuplidortxt.Items.Clear();
-            string query = "SELECT id, nombre FROM suplidor";
-
-            using (SqlCommand command = new SqlCommand(query, databaseManager.GetConnection()))
+            if (idsuplidortxt.SelectedItem != null)
             {
-                using (SqlDataReader reader = command.ExecuteReader())
-                {
-                    while (reader.Read())
-                    {
-                        string id = reader["id"].ToString();
-                        string nombre = reader["nombre"].ToString();
-                        string displayText = $"{id} - {nombre}";
-                        idsuplidortxt.Items.Add(displayText);
-                    }
-                }
+                string selectedSuplidor = idsuplidortxt.SelectedItem.ToString();
+                // El resto de tu código que depende de selectedSuplidor viene aquí...
             }
         }
 
@@ -170,6 +204,12 @@ namespace Inventary_Hull
             {
                 MessageBox.Show("ERROR: " + ex.Message);
             }
+        }
+
+        private void agrproducto_Load_1(object sender, EventArgs e)
+        {
+            PopulateCategoriaComboBox();
+            PopulateSuplidorComboBox();
         }
 
         // Implementación de otros métodos y eventos según sea necesario...

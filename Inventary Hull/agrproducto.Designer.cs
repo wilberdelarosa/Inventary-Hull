@@ -77,12 +77,13 @@
             // categoriabox
             // 
             categoriabox.BackColor = SystemColors.ActiveBorder;
+            categoriabox.DropDownWidth = 215;
             categoriabox.Enabled = false;
             categoriabox.FormattingEnabled = true;
             categoriabox.Location = new Point(132, 120);
             categoriabox.Name = "categoriabox";
             categoriabox.Size = new Size(198, 28);
-            categoriabox.TabIndex = 3;
+            categoriabox.TabIndex = 9;
             categoriabox.SelectedIndexChanged += categoriabox_SelectedIndexChanged;
             // 
             // label3
@@ -208,6 +209,7 @@
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "agrproducto";
             Text = "Entrada producto";
+            Load += agrproducto_Load_1;
             ResumeLayout(false);
             PerformLayout();
         }
