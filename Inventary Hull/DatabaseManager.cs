@@ -5,12 +5,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Configuration;
+using Microsoft.Data.SqlClient;
 
 namespace Inventary_Hull
 {
     public class DatabaseManager
     {
-        private  sqlConnection connection 
+
+        private SqlConnection connection;
+        //private sqlConnection connection 
         public DatabaseManager()
         {
             string connectionString = ConfigurationManager.ConnectionStrings["InventoryHall"].ConnectionString;
