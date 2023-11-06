@@ -16,9 +16,8 @@ namespace Inventary_Hull
         //private sqlConnection connection 
         public DatabaseManager()
         {
-            string connectionString = ConfigurationManager.ConnectionStrings["InventoryHall"].ConnectionString;
-            connection = new SqlConnection(connectionString);
-
+            // Asegúrate de que la conexión se instancie aquí.
+            connection = new SqlConnection(@"Data Source=.;Initial Catalog=InventoryHall;Integrated Security=True;TrustServerCertificate=true");
         }
 
         public SqlConnection GetConnection()
@@ -32,12 +31,11 @@ namespace Inventary_Hull
 
         public void CloseConnection()
         {
-            if (connection.State == System.Data.ConnectionState.Open)
+            // Cierra la conexión si está abierta.
             {
                 connection.Close();
             }
         }
-
         public void ExecuteNonQuery(string query)
         {
             using (SqlCommand command = new SqlCommand(query, GetConnection()))
