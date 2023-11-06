@@ -48,6 +48,7 @@
             // nombretxt
             // 
             nombretxt.BackColor = SystemColors.ButtonShadow;
+            nombretxt.Enabled = false;
             nombretxt.ForeColor = SystemColors.ActiveBorder;
             nombretxt.Location = new Point(132, 40);
             nombretxt.Name = "nombretxt";
@@ -76,6 +77,7 @@
             // categoriabox
             // 
             categoriabox.BackColor = SystemColors.ActiveBorder;
+            categoriabox.Enabled = false;
             categoriabox.FormattingEnabled = true;
             categoriabox.Location = new Point(132, 120);
             categoriabox.Name = "categoriabox";
@@ -94,6 +96,8 @@
             // 
             // descripciontxt
             // 
+            descripciontxt.BackColor = Color.DarkGray;
+            descripciontxt.Enabled = false;
             descripciontxt.Location = new Point(71, 288);
             descripciontxt.Name = "descripciontxt";
             descripciontxt.Size = new Size(616, 63);
@@ -114,6 +118,7 @@
             // 
             stocktxt.AcceptsReturn = true;
             stocktxt.BackColor = SystemColors.ActiveBorder;
+            stocktxt.Enabled = false;
             stocktxt.Location = new Point(132, 187);
             stocktxt.Name = "stocktxt";
             stocktxt.Size = new Size(38, 27);
@@ -132,6 +137,7 @@
             // secciontxt
             // 
             secciontxt.BackColor = SystemColors.ActiveBorder;
+            secciontxt.Enabled = false;
             secciontxt.Location = new Point(510, 40);
             secciontxt.Name = "secciontxt";
             secciontxt.Size = new Size(198, 27);
@@ -150,6 +156,7 @@
             // idsuplidortxt
             // 
             idsuplidortxt.BackColor = SystemColors.ActiveBorder;
+            idsuplidortxt.Enabled = false;
             idsuplidortxt.FormattingEnabled = true;
             idsuplidortxt.Location = new Point(510, 120);
             idsuplidortxt.Name = "idsuplidortxt";

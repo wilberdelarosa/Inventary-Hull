@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Data.SqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,8 +20,9 @@ namespace Inventary_Hull
         {
             InitializeComponent();
             databaseManager = new DatabaseManager();
-        }
 
+        }
+        // Se llama una vez al cargar el formulario para llenar los ComboBoxes
         private void agrproducto_Load(object sender, EventArgs e)
         {
             PopulateCategoriaComboBox();
@@ -29,6 +31,25 @@ namespace Inventary_Hull
 
         private void PopulateCategoriaComboBox()
         {
+            // Llenar el ComboBox de Categoría aquí...
+        }
+
+        private void PopulateSuplidorComboBox()
+        {
+            // Llenar el ComboBox de Suplidor aquí...
+        }
+
+        // Este evento ahora no debería limpiar y repoblar el ComboBox, puede que ni siquiera sea necesario
+        private void nombretxt_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void categoriabox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //PopulateCategoriaComboBox();
+            //PopulateSuplidorComboBox();
+
             categoriabox.Items.Clear();
             string query = "SELECT id, tipo FROM categoria";
 
@@ -46,8 +67,16 @@ namespace Inventary_Hull
                 }
             }
         }
+        private void stocktxt_TextChanged(object sender, EventArgs e)
+        {
 
-        private void PopulateSuplidorComboBox()
+        }
+
+        private void secciontxt_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+        private void idsuplidortxt_SelectedIndexChanged(object sender, EventArgs e)
         {
             idsuplidortxt.Items.Clear();
             string query = "SELECT id, nombre FROM suplidor";
@@ -67,6 +96,27 @@ namespace Inventary_Hull
             }
         }
 
+        private void descripciontxt_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void insertarbtn_Click(object sender, EventArgs e)
+        {
+            nombretxt.Enabled = true;
+            descripciontxt.Enabled = true;
+            stocktxt.Enabled = true;
+            idsuplidortxt.Enabled = true;
+            secciontxt.Enabled = true;
+            categoriabox.Enabled = true;
+
+            nombretxt.BackColor = Color.White;
+            descripciontxt.BackColor = Color.White;
+            stocktxt.BackColor = Color.White;
+            idsuplidortxt.BackColor = Color.White;
+            secciontxt.BackColor = Color.White;
+            categoriabox.BackColor = Color.White;
+        }
         private void guardarbtn_Click(object sender, EventArgs e)
         {
             try

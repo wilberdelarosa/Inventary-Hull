@@ -45,7 +45,7 @@ namespace Inventary_Hull
                 {
                     MessageBox.Show("La contraseña es incorrecta");
 
-              
+
                 }
             }
         }

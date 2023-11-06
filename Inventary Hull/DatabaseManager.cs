@@ -11,9 +11,8 @@ namespace Inventary_Hull
 {
     public class DatabaseManager
     {
+        private SqlConnection connection; // Este es el objeto de conexión que vamos a usar.
 
-        private SqlConnection connection;
-        //private sqlConnection connection 
         public DatabaseManager()
         {
             // Asegúrate de que la conexión se instancie aquí.
@@ -22,6 +21,13 @@ namespace Inventary_Hull
 
         public SqlConnection GetConnection()
         {
+            // Verifica si el objeto de conexión es nulo antes de cualquier operación.
+            if (connection == null)
+            {
+                throw new InvalidOperationException("La conexión de base de datos no ha sido inicializada.");
+            }
+
+            // Verifica el estado de la conexión antes de intentar abrirla.
             if (connection.State == System.Data.ConnectionState.Closed)
             {
                 connection.Open();
@@ -32,6 +38,7 @@ namespace Inventary_Hull
         public void CloseConnection()
         {
             // Cierra la conexión si está abierta.
+            if (connection != null && connection.State == System.Data.ConnectionState.Open)
             {
                 connection.Close();
             }
