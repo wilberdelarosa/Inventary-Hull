@@ -14,6 +14,8 @@ namespace Inventary_Hull
 {
     public partial class agrproducto : Form
     {
+
+
         private DatabaseManager databaseManager;
 
         public agrproducto()
@@ -26,14 +28,17 @@ namespace Inventary_Hull
         private void agrproducto_Load(object sender, EventArgs e)
         {
             PopulateCategoriaComboBox();
-            PopulateSuplidorComboBox();
-        }
 
-        private void PopulateCategoriaComboBox()
+            PopulateSuplidorComboBox();
+
+            PopulateseccionComboBox();
+        }
+        private void PopulateseccionComboBox()
+
         {
             // Llenar el ComboBox de Categoría aquí...
             categoriabox.Items.Clear();
-            string query = "SELECT id, tipo FROM categoria";
+            string query = "SELECT id, tipo, seccion FROM categoria";
 
             try
             {
@@ -42,9 +47,11 @@ namespace Inventary_Hull
                 {
                     while (reader.Read())
                     {
+
+                        string seccion = reader["seccion"].ToString();
                         string id = reader["id"].ToString();
                         string tipo = reader["tipo"].ToString();
-                        string displayText = $"{id} - {tipo}";
+                        string displayText = $"{id} - {tipo} - seccion {seccion}";
                         categoriabox.Items.Add(displayText);
                     }
 
@@ -59,7 +66,45 @@ namespace Inventary_Hull
                 // cerrar la conexión aquí.
                 databaseManager.CloseConnection();
             }
+
         }
+
+
+        private void PopulateCategoriaComboBox()
+        {
+            // Llenar el ComboBox de Categoría aquí...
+            categoriabox.Items.Clear();
+            string query = "SELECT id, tipo, seccion FROM categoria";
+
+            try
+            {
+                using (SqlCommand command = new SqlCommand(query, databaseManager.GetConnection()))
+                using (SqlDataReader reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+
+                        string seccion = reader["seccion"].ToString();
+                        string id = reader["id"].ToString();
+                        string tipo = reader["tipo"].ToString();
+                        string displayText = $"{id} - {tipo} - seccion {seccion}";
+                        categoriabox.Items.Add(displayText);
+                    }
+
+                }
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show("Error al obtener categorías: " + ex.Message);
+            }
+            finally
+            {
+                // cerrar la conexión aquí.
+                databaseManager.CloseConnection();
+            }
+
+        }
+
 
         private void PopulateSuplidorComboBox()
         {
@@ -77,6 +122,7 @@ namespace Inventary_Hull
                     {
                         string id = reader["id"].ToString();
                         string nombre = reader["nombre"].ToString();
+
                         string displayText = $"{id} - {nombre}";
                         idsuplidortxt.Items.Add(displayText);
                     }
@@ -119,7 +165,11 @@ namespace Inventary_Hull
 
         private void secciontxt_TextChanged(object sender, EventArgs e)
         {
-
+            if (secciontxt.SelectedIndex != 0)
+            {
+                string selectedseccion = secciontxt.SelectedItem.ToString();
+                // Resto de tu código que depende de selectedSeccion
+            }
         }
         private void idsuplidortxt_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -157,7 +207,7 @@ namespace Inventary_Hull
             {
                 int stock = int.Parse(stocktxt.Text); // Validar y convertir stock a entero
 
-                string insertQuery = "INSERT INTO producto(nombre, categoria, descripcion, stock, idsuplidor, seccion)" + 
+                string insertQuery = "INSERT INTO producto(nombre, categoria, descripcion, stock, idsuplidor, seccion)" +
                     "VALUES (@nombre, @categoria, @descripcion, @stock, @idsuplidor, @seccion)";
 
                 using (SqlCommand command = new SqlCommand(insertQuery, databaseManager.GetConnection()))
@@ -204,13 +254,15 @@ namespace Inventary_Hull
             {
                 MessageBox.Show("ERROR: " + ex.Message);
             }
-           
+
         }
 
         private void agrproducto_Load_1(object sender, EventArgs e)
         {
             PopulateCategoriaComboBox();
+            PopulateCategoriaComboBox();
             PopulateSuplidorComboBox();
+
         }
 
         // Implementación de otros métodos y eventos según sea necesario...

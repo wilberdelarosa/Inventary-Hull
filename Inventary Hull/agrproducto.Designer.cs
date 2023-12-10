@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(agrproducto));
             nombretxt = new TextBox();
             label1 = new Label();
@@ -38,18 +39,22 @@
             label4 = new Label();
             stocktxt = new TextBox();
             label5 = new Label();
-            secciontxt = new TextBox();
             label6 = new Label();
             idsuplidortxt = new ComboBox();
             insertarbtn = new Button();
             guardarbtn = new Button();
+            secciontxt = new ComboBox();
+            databaseManagerBindingSource1 = new BindingSource(components);
+            databaseManagerBindingSource = new BindingSource(components);
+            ((System.ComponentModel.ISupportInitialize)databaseManagerBindingSource1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)databaseManagerBindingSource).BeginInit();
             SuspendLayout();
             // 
             // nombretxt
             // 
             nombretxt.BackColor = SystemColors.ButtonShadow;
             nombretxt.Enabled = false;
-            nombretxt.ForeColor = SystemColors.ActiveBorder;
+            nombretxt.ForeColor = SystemColors.ActiveCaptionText;
             nombretxt.Location = new Point(132, 40);
             nombretxt.Name = "nombretxt";
             nombretxt.Size = new Size(198, 27);
@@ -76,7 +81,7 @@
             // 
             // categoriabox
             // 
-            categoriabox.BackColor = SystemColors.ControlDark;
+            categoriabox.BackColor = SystemColors.WindowFrame;
             categoriabox.DropDownWidth = 215;
             categoriabox.Enabled = false;
             categoriabox.FormattingEnabled = true;
@@ -135,16 +140,6 @@
             label5.TabIndex = 8;
             label5.Text = "Sección";
             // 
-            // secciontxt
-            // 
-            secciontxt.BackColor = SystemColors.ActiveBorder;
-            secciontxt.Enabled = false;
-            secciontxt.Location = new Point(510, 40);
-            secciontxt.Name = "secciontxt";
-            secciontxt.Size = new Size(198, 27);
-            secciontxt.TabIndex = 9;
-            secciontxt.TextChanged += secciontxt_TextChanged;
-            // 
             // label6
             // 
             label6.AutoSize = true;
@@ -156,7 +151,7 @@
             // 
             // idsuplidortxt
             // 
-            idsuplidortxt.BackColor = SystemColors.ControlDark;
+            idsuplidortxt.BackColor = SystemColors.WindowFrame;
             idsuplidortxt.Enabled = false;
             idsuplidortxt.FormattingEnabled = true;
             idsuplidortxt.Location = new Point(510, 120);
@@ -187,16 +182,37 @@
             guardarbtn.UseVisualStyleBackColor = false;
             guardarbtn.Click += guardarbtn_Click;
             // 
+            // secciontxt
+            // 
+            secciontxt.AutoCompleteMode = AutoCompleteMode.Append;
+            secciontxt.BackColor = SystemColors.WindowFrame;
+            secciontxt.Enabled = false;
+            secciontxt.ForeColor = SystemColors.ActiveCaptionText;
+            secciontxt.FormattingEnabled = true;
+            secciontxt.Location = new Point(510, 44);
+            secciontxt.Name = "secciontxt";
+            secciontxt.Size = new Size(198, 28);
+            secciontxt.TabIndex = 14;
+            secciontxt.SelectedIndexChanged += secciontxt_TextChanged;
+            // 
+            // databaseManagerBindingSource1
+            // 
+            databaseManagerBindingSource1.DataSource = typeof(DatabaseManager);
+            // 
+            // databaseManagerBindingSource
+            // 
+            databaseManagerBindingSource.DataSource = typeof(DatabaseManager);
+            // 
             // agrproducto
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(secciontxt);
             Controls.Add(guardarbtn);
             Controls.Add(insertarbtn);
             Controls.Add(idsuplidortxt);
             Controls.Add(label6);
-            Controls.Add(secciontxt);
             Controls.Add(label5);
             Controls.Add(stocktxt);
             Controls.Add(label4);
@@ -210,6 +226,8 @@
             Name = "agrproducto";
             Text = "Entrada producto";
             Load += agrproducto_Load_1;
+            ((System.ComponentModel.ISupportInitialize)databaseManagerBindingSource1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)databaseManagerBindingSource).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -225,10 +243,12 @@
         private Label label4;
         private TextBox stocktxt;
         private Label label5;
-        private TextBox secciontxt;
         private Label label6;
         private ComboBox idsuplidortxt;
         private Button insertarbtn;
         private Button guardarbtn;
+        private ComboBox secciontxt;
+        private BindingSource databaseManagerBindingSource;
+        private BindingSource databaseManagerBindingSource1;
     }
 }

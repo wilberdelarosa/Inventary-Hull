@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             menuStrip1 = new MenuStrip();
-            btncerrar = new Button();
             eNTRADAToolStripMenuItem = new ToolStripMenuItem();
             eMPLEADOToolStripMenuItem = new ToolStripMenuItem();
             eMPLEADOToolStripMenuItem1 = new ToolStripMenuItem();
@@ -42,6 +41,7 @@
             sUPLIDORToolStripMenuItem1 = new ToolStripMenuItem();
             sISTEMAToolStripMenuItem = new ToolStripMenuItem();
             aCERCADEToolStripMenuItem = new ToolStripMenuItem();
+            btncerrar = new Button();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -54,22 +54,6 @@
             menuStrip1.Size = new Size(800, 28);
             menuStrip1.TabIndex = 0;
             menuStrip1.Text = "menuStrip1";
-            // 
-            // btncerrar
-            // 
-            btncerrar.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            btncerrar.BackColor = SystemColors.ButtonFace;
-            btncerrar.Font = new Font("Segoe UI", 7.8F, FontStyle.Bold, GraphicsUnit.Point);
-            btncerrar.Image = Properties.Resources._5402411_down_log_off_out_power_icon;
-            btncerrar.ImageAlign = ContentAlignment.TopCenter;
-            btncerrar.Location = new Point(721, 391);
-            btncerrar.Name = "btncerrar";
-            btncerrar.Size = new Size(88, 70);
-            btncerrar.TabIndex = 1;
-            btncerrar.Text = "CERRAR";
-            btncerrar.TextAlign = ContentAlignment.BottomCenter;
-            btncerrar.UseVisualStyleBackColor = false;
-            btncerrar.Click += Btncerrar;
             // 
             // eNTRADAToolStripMenuItem
             // 
@@ -90,12 +74,14 @@
             eMPLEADOToolStripMenuItem1.Name = "eMPLEADOToolStripMenuItem1";
             eMPLEADOToolStripMenuItem1.Size = new Size(168, 26);
             eMPLEADOToolStripMenuItem1.Text = "EMPLEADO";
+            eMPLEADOToolStripMenuItem1.Click += eMPLEADOToolStripMenuItem1_Click;
             // 
             // sUPLIDORToolStripMenuItem
             // 
             sUPLIDORToolStripMenuItem.Name = "sUPLIDORToolStripMenuItem";
             sUPLIDORToolStripMenuItem.Size = new Size(168, 26);
             sUPLIDORToolStripMenuItem.Text = "SUPLIDOR";
+            sUPLIDORToolStripMenuItem.Click += sUPLIDORToolStripMenuItem_Click;
             // 
             // pROCESOToolStripMenuItem
             // 
@@ -109,6 +95,7 @@
             dISTRIBUCIONDEARTICULOToolStripMenuItem.Name = "dISTRIBUCIONDEARTICULOToolStripMenuItem";
             dISTRIBUCIONDEARTICULOToolStripMenuItem.Size = new Size(283, 26);
             dISTRIBUCIONDEARTICULOToolStripMenuItem.Text = "DISTRIBUCION DE ARTICULO";
+            dISTRIBUCIONDEARTICULOToolStripMenuItem.Click += dISTRIBUCIONDEARTICULOToolStripMenuItem_Click;
             // 
             // cONSULTAToolStripMenuItem
             // 
@@ -120,19 +107,19 @@
             // pRODUCTOToolStripMenuItem
             // 
             pRODUCTOToolStripMenuItem.Name = "pRODUCTOToolStripMenuItem";
-            pRODUCTOToolStripMenuItem.Size = new Size(224, 26);
+            pRODUCTOToolStripMenuItem.Size = new Size(168, 26);
             pRODUCTOToolStripMenuItem.Text = "PRODUCTO";
             // 
             // eMPLEADOToolStripMenuItem2
             // 
             eMPLEADOToolStripMenuItem2.Name = "eMPLEADOToolStripMenuItem2";
-            eMPLEADOToolStripMenuItem2.Size = new Size(224, 26);
+            eMPLEADOToolStripMenuItem2.Size = new Size(168, 26);
             eMPLEADOToolStripMenuItem2.Text = "EMPLEADO";
             // 
             // sUPLIDORToolStripMenuItem1
             // 
             sUPLIDORToolStripMenuItem1.Name = "sUPLIDORToolStripMenuItem1";
-            sUPLIDORToolStripMenuItem1.Size = new Size(224, 26);
+            sUPLIDORToolStripMenuItem1.Size = new Size(168, 26);
             sUPLIDORToolStripMenuItem1.Text = "SUPLIDOR";
             // 
             // sISTEMAToolStripMenuItem
@@ -145,10 +132,26 @@
             // aCERCADEToolStripMenuItem
             // 
             aCERCADEToolStripMenuItem.Name = "aCERCADEToolStripMenuItem";
-            aCERCADEToolStripMenuItem.Size = new Size(224, 26);
+            aCERCADEToolStripMenuItem.Size = new Size(170, 26);
             aCERCADEToolStripMenuItem.Text = "ACERCA DE";
             // 
-            // Form1
+            // btncerrar
+            // 
+            btncerrar.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            btncerrar.BackColor = SystemColors.ButtonFace;
+            btncerrar.Font = new Font("Segoe UI", 7.8F, FontStyle.Bold, GraphicsUnit.Point);
+            btncerrar.Image = Properties.Resources._5402411_down_log_off_out_power_icon;
+            btncerrar.ImageAlign = ContentAlignment.TopCenter;
+            btncerrar.Location = new Point(721, 391);
+            btncerrar.Name = "btncerrar";
+            btncerrar.Size = new Size(88, 70);
+            btncerrar.TabIndex = 1;
+            btncerrar.Text = "CERRAR";
+            btncerrar.TextAlign = ContentAlignment.BottomCenter;
+            btncerrar.UseVisualStyleBackColor = false;
+            btncerrar.Click += Btncerrar;
+            // 
+            // Principal
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -160,7 +163,7 @@
             MainMenuStrip = menuStrip1;
             MaximizeBox = false;
             MinimizeBox = false;
-            Name = "Form1";
+            Name = "Principal";
             Text = "Inventory hull";
             WindowState = FormWindowState.Maximized;
             menuStrip1.ResumeLayout(false);
