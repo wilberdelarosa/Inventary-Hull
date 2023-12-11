@@ -22,12 +22,13 @@ namespace Inventary_Hull
         {
             InitializeComponent();
             databaseManager = new DatabaseManager();
+            categoriabox.SelectedIndexChanged += new EventHandler(categoriabox_SelectedIndexChanged);
 
         }
         // Se llama una vez al cargar el formulario para llenar los ComboBoxes
         private void agrproducto_Load(object sender, EventArgs e)
         {
-            PopulateCategoriaComboBox();
+           PopulateCategoriaComboBox();
 
             PopulateSuplidorComboBox();
 
@@ -73,7 +74,7 @@ namespace Inventary_Hull
         private void PopulateCategoriaComboBox()
         {
             // Llenar el ComboBox de Categoría aquí...
-            categoriabox.Items.Clear();
+           categoriabox.Items.Clear();
             string query = "SELECT id, tipo, seccion FROM categoria";
 
             try
@@ -87,7 +88,7 @@ namespace Inventary_Hull
                         string seccion = reader["seccion"].ToString();
                         string id = reader["id"].ToString();
                         string tipo = reader["tipo"].ToString();
-                        string displayText = $"{id} - {tipo} - seccion {seccion}";
+                        string displayText = $"{id} - {tipo} -  {seccion}";
                         categoriabox.Items.Add(displayText);
                     }
 
@@ -148,16 +149,31 @@ namespace Inventary_Hull
 
         private void categoriabox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //PopulateCategoriaComboBox();
-            //PopulateSuplidorComboBox();
-            if (categoriabox.SelectedItem != null)
-            {
-                string selectedCategory = categoriabox.SelectedItem.ToString();
-                // El resto de tu código que depende de selectedCategory viene aquí...
+
+           
+         
+
+                //PopulateCategoriaComboBox();
+                //PopulateSuplidorComboBox();
+                if (categoriabox.SelectedItem != null)
+                  {
+                      string selectedCategory = categoriabox.SelectedItem.ToString();
+                      string seccion = selectedCategory.Split(new[] { " - " }, StringSplitOptions.None)[2].Trim(); // Asumiendo que el formato es "id - tipo - sección"
+                      UpdateSeccionComboBox(seccion);
+                      // El resto de tu código que depende de selectedCategory viene aquí...
+                  }
+
+
             }
-
-
+        private void UpdateSeccionComboBox(string seccion)
+        {
+            secciontxt.Items.Clear();
+            for (int i = 1; i <= 3; i++)
+            {
+                secciontxt.Items.Add($"{seccion}-{i}");
+            }
         }
+
         private void stocktxt_TextChanged(object sender, EventArgs e)
         {
 
