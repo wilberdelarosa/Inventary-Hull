@@ -48,7 +48,7 @@
             // guardarbtn
             // 
             guardarbtn.BackColor = Color.Coral;
-            guardarbtn.Location = new Point(572, 394);
+            guardarbtn.Location = new Point(513, 402);
             guardarbtn.Name = "guardarbtn";
             guardarbtn.Size = new Size(106, 29);
             guardarbtn.TabIndex = 27;
@@ -59,7 +59,7 @@
             // insertarbtn
             // 
             insertarbtn.BackColor = Color.Coral;
-            insertarbtn.Location = new Point(218, 394);
+            insertarbtn.Location = new Point(159, 402);
             insertarbtn.Name = "insertarbtn";
             insertarbtn.Size = new Size(106, 29);
             insertarbtn.TabIndex = 26;
@@ -70,7 +70,7 @@
             // telefonoLB
             // 
             telefonoLB.AutoSize = true;
-            telefonoLB.Location = new Point(71, 236);
+            telefonoLB.Location = new Point(12, 244);
             telefonoLB.Name = "telefonoLB";
             telefonoLB.Size = new Size(70, 20);
             telefonoLB.TabIndex = 20;
@@ -81,7 +81,7 @@
             descripciontxt.BackColor = Color.DarkGray;
             descripciontxt.Enabled = false;
             descripciontxt.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            descripciontxt.Location = new Point(155, 309);
+            descripciontxt.Location = new Point(96, 317);
             descripciontxt.Name = "descripciontxt";
             descripciontxt.Size = new Size(692, 63);
             descripciontxt.TabIndex = 19;
@@ -90,7 +90,7 @@
             // descripcionLB
             // 
             descripcionLB.AutoSize = true;
-            descripcionLB.Location = new Point(440, 267);
+            descripcionLB.Location = new Point(381, 275);
             descripcionLB.Name = "descripcionLB";
             descripcionLB.Size = new Size(90, 20);
             descripcionLB.TabIndex = 18;
@@ -100,7 +100,7 @@
             // 
             rncLB.AutoSize = true;
             rncLB.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            rncLB.Location = new Point(71, 165);
+            rncLB.Location = new Point(12, 173);
             rncLB.Name = "rncLB";
             rncLB.Size = new Size(40, 20);
             rncLB.TabIndex = 17;
@@ -110,7 +110,7 @@
             // 
             nombreLB.AutoSize = true;
             nombreLB.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            nombreLB.Location = new Point(71, 89);
+            nombreLB.Location = new Point(12, 97);
             nombreLB.Name = "nombreLB";
             nombreLB.Size = new Size(67, 20);
             nombreLB.TabIndex = 16;
@@ -120,7 +120,7 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label7.Location = new Point(326, 21);
+            label7.Location = new Point(267, 29);
             label7.Name = "label7";
             label7.Size = new Size(241, 28);
             label7.TabIndex = 29;
@@ -131,7 +131,7 @@
             nombretxt.BackColor = SystemColors.ScrollBar;
             nombretxt.Enabled = false;
             nombretxt.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            nombretxt.Location = new Point(184, 87);
+            nombretxt.Location = new Point(125, 95);
             nombretxt.Name = "nombretxt";
             nombretxt.Size = new Size(222, 27);
             nombretxt.TabIndex = 30;
@@ -141,7 +141,7 @@
             emailtxt.BackColor = SystemColors.ScrollBar;
             emailtxt.Enabled = false;
             emailtxt.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            emailtxt.Location = new Point(610, 89);
+            emailtxt.Location = new Point(551, 97);
             emailtxt.Name = "emailtxt";
             emailtxt.Size = new Size(222, 27);
             emailtxt.TabIndex = 31;
@@ -151,7 +151,7 @@
             rnctxt.BackColor = SystemColors.ScrollBar;
             rnctxt.Enabled = false;
             rnctxt.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            rnctxt.Location = new Point(184, 165);
+            rnctxt.Location = new Point(125, 173);
             rnctxt.Mask = "000-00000-0";
             rnctxt.Name = "rnctxt";
             rnctxt.Size = new Size(95, 27);
@@ -163,7 +163,7 @@
             telefonotxt.BackColor = SystemColors.ScrollBar;
             telefonotxt.Enabled = false;
             telefonotxt.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            telefonotxt.Location = new Point(184, 233);
+            telefonotxt.Location = new Point(125, 241);
             telefonotxt.Mask = "(999) 000-0000";
             telefonotxt.Name = "telefonotxt";
             telefonotxt.Size = new Size(140, 27);
@@ -175,7 +175,7 @@
             direcciontxt.BackColor = SystemColors.ScrollBar;
             direcciontxt.Enabled = false;
             direcciontxt.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            direcciontxt.Location = new Point(610, 165);
+            direcciontxt.Location = new Point(551, 173);
             direcciontxt.Name = "direcciontxt";
             direcciontxt.Size = new Size(222, 27);
             direcciontxt.TabIndex = 34;
@@ -184,7 +184,7 @@
             // 
             emailLB.AutoSize = true;
             emailLB.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            emailLB.Location = new Point(521, 91);
+            emailLB.Location = new Point(462, 99);
             emailLB.Name = "emailLB";
             emailLB.Size = new Size(47, 20);
             emailLB.TabIndex = 35;
@@ -194,7 +194,7 @@
             // 
             direccionLB.AutoSize = true;
             direccionLB.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            direccionLB.Location = new Point(521, 165);
+            direccionLB.Location = new Point(462, 173);
             direccionLB.Name = "direccionLB";
             direccionLB.Size = new Size(74, 20);
             direccionLB.TabIndex = 36;
@@ -204,7 +204,7 @@
             // 
             AutoScaleDimensions = new SizeF(9F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(900, 450);
+            ClientSize = new Size(803, 506);
             Controls.Add(direccionLB);
             Controls.Add(emailLB);
             Controls.Add(direcciontxt);

@@ -130,8 +130,14 @@
   <data name="minimizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\minimizar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="minimizar2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\minimizar2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="5402411_down_log_off_out_power_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\5402411_down_log_off_out_power_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tipografia 2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tipografia 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="inventory logoo 04" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\inventory logoo 04.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -160,7 +166,10 @@
   <data name="logo111" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logo111.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="minimizar2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\minimizar2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="tipografia 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tipografia 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tipografia 3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tipografia 3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

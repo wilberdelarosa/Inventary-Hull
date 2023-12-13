@@ -18,13 +18,13 @@ namespace Inventary_Hull
         public prodistribucion0()
         {
             InitializeComponent();
-           
+
         }
 
         private void prodistribucion0_Load(object sender, EventArgs e)
         {
             LoadDataIntoDataGridView();
-            
+
             // Abrir la conexión a la base de datos
             connection = dbManager.GetConnection();
             if (connection.State == System.Data.ConnectionState.Closed)
@@ -47,13 +47,13 @@ namespace Inventary_Hull
                         comboBoxProductIDs.Items.Add(reader["id"].ToString());
                     }
                 }
-                   
-            }    
+
+            }
         }
 
         private void buttonseccionupdate_Click(object sender, EventArgs e)
         {
-            
+
             if (comboBoxProductIDs.SelectedItem != null)
             {
                 string selectedProductID = comboBoxProductIDs.SelectedItem.ToString();
@@ -134,11 +134,11 @@ namespace Inventary_Hull
                     dataGridView1.DataSource = dataTable;
 
                 }
-               
+
             }
         }
 
-     
+
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {

@@ -129,8 +129,8 @@ namespace Inventary_Hull
 
         private void ShowMainForm(string welcomeMessage)
         {
-            Principal principal = new Principal();
-            principal.Show();
+            Principal0 principal0 = new Principal0();
+            principal0.Show();
             MessageBox.Show(welcomeMessage);
             this.Hide();
         }

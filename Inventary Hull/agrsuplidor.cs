@@ -18,7 +18,7 @@ namespace Inventary_Hull
         {
             InitializeComponent();
             databaseManager = new DatabaseManager();
-            
+
         }
 
         private void agrsuplidor_Load(object sender, EventArgs e)

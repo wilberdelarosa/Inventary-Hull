@@ -41,11 +41,11 @@
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(29, 58);
+            dataGridView1.Location = new Point(12, 58);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 29;
-            dataGridView1.Size = new Size(711, 278);
+            dataGridView1.Size = new Size(776, 278);
             dataGridView1.TabIndex = 0;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
@@ -70,14 +70,14 @@
             // 
             // textBoxNewSeccion
             // 
-            textBoxNewSeccion.Location = new Point(493, 386);
+            textBoxNewSeccion.Location = new Point(387, 391);
             textBoxNewSeccion.Name = "textBoxNewSeccion";
             textBoxNewSeccion.Size = new Size(125, 27);
             textBoxNewSeccion.TabIndex = 3;
             // 
             // buttonseccionupdate
             // 
-            buttonseccionupdate.Location = new Point(313, 483);
+            buttonseccionupdate.Location = new Point(259, 454);
             buttonseccionupdate.Name = "buttonseccionupdate";
             buttonseccionupdate.Size = new Size(94, 29);
             buttonseccionupdate.TabIndex = 4;
@@ -88,7 +88,7 @@
             // nuevaseccionLB
             // 
             nuevaseccionLB.AutoSize = true;
-            nuevaseccionLB.Location = new Point(525, 349);
+            nuevaseccionLB.Location = new Point(392, 349);
             nuevaseccionLB.Name = "nuevaseccionLB";
             nuevaseccionLB.Size = new Size(120, 20);
             nuevaseccionLB.TabIndex = 5;
@@ -107,7 +107,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 524);
+            ClientSize = new Size(803, 506);
             Controls.Add(idproductoLB);
             Controls.Add(nuevaseccionLB);
             Controls.Add(buttonseccionupdate);

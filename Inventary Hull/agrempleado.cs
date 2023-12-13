@@ -25,7 +25,7 @@ namespace Inventary_Hull
 
         private void nuevobtn_Click(object sender, EventArgs e)
         {
-           
+
         }
 
         private void nombretxt_TextChanged(object sender, EventArgs e)

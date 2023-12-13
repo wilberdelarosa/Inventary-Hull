@@ -28,7 +28,7 @@ namespace Inventary_Hull
         // Se llama una vez al cargar el formulario para llenar los ComboBoxes
         private void agrproducto_Load(object sender, EventArgs e)
         {
-           PopulateCategoriaComboBox();
+            PopulateCategoriaComboBox();
 
             PopulateSuplidorComboBox();
 
@@ -74,7 +74,7 @@ namespace Inventary_Hull
         private void PopulateCategoriaComboBox()
         {
             // Llenar el ComboBox de Categoría aquí...
-           categoriabox.Items.Clear();
+            categoriabox.Items.Clear();
             string query = "SELECT id, tipo, seccion FROM categoria";
 
             try
@@ -150,21 +150,21 @@ namespace Inventary_Hull
         private void categoriabox_SelectedIndexChanged(object sender, EventArgs e)
         {
 
-           
-         
-
-                //PopulateCategoriaComboBox();
-                //PopulateSuplidorComboBox();
-                if (categoriabox.SelectedItem != null)
-                  {
-                      string selectedCategory = categoriabox.SelectedItem.ToString();
-                      string seccion = selectedCategory.Split(new[] { " - " }, StringSplitOptions.None)[2].Trim(); // Asumiendo que el formato es "id - tipo - sección"
-                      UpdateSeccionComboBox(seccion);
-                      // El resto de tu código que depende de selectedCategory viene aquí...
-                  }
 
 
+
+            //PopulateCategoriaComboBox();
+            //PopulateSuplidorComboBox();
+            if (categoriabox.SelectedItem != null)
+            {
+                string selectedCategory = categoriabox.SelectedItem.ToString();
+                string seccion = selectedCategory.Split(new[] { " - " }, StringSplitOptions.None)[2].Trim(); // Asumiendo que el formato es "id - tipo - sección"
+                UpdateSeccionComboBox(seccion);
+                // El resto de tu código que depende de selectedCategory viene aquí...
             }
+
+
+        }
         private void UpdateSeccionComboBox(string seccion)
         {
             secciontxt.Items.Clear();

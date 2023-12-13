@@ -46,7 +46,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(803, 506);
             Controls.Add(dataGridView1);
             Name = "consuplidor";
             Text = "Consulta Suplidor";

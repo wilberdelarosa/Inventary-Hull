@@ -50,7 +50,7 @@
             // 
             // txtID
             // 
-            txtID.Location = new Point(83, 365);
+            txtID.Location = new Point(88, 401);
             txtID.Name = "txtID";
             txtID.Size = new Size(125, 27);
             txtID.TabIndex = 1;
@@ -58,7 +58,7 @@
             // 
             // buscarbtn
             // 
-            buscarbtn.Location = new Point(335, 363);
+            buscarbtn.Location = new Point(340, 399);
             buscarbtn.Name = "buscarbtn";
             buscarbtn.Size = new Size(94, 29);
             buscarbtn.TabIndex = 2;
@@ -68,7 +68,7 @@
             // 
             // refreshbtn
             // 
-            refreshbtn.Location = new Point(531, 363);
+            refreshbtn.Location = new Point(536, 399);
             refreshbtn.Name = "refreshbtn";
             refreshbtn.Size = new Size(94, 29);
             refreshbtn.TabIndex = 3;
@@ -79,7 +79,7 @@
             // buscarLB
             // 
             buscarLB.AutoSize = true;
-            buscarLB.Location = new Point(65, 342);
+            buscarLB.Location = new Point(70, 378);
             buscarLB.Name = "buscarLB";
             buscarLB.Size = new Size(165, 20);
             buscarLB.TabIndex = 4;
@@ -99,7 +99,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(803, 506);
             Controls.Add(consultadeproductoLB);
             Controls.Add(buscarLB);
             Controls.Add(refreshbtn);

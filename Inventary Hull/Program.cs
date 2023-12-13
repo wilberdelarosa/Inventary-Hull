@@ -12,6 +12,7 @@ namespace Inventary_Hull
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             Application.Run(new frmlogin());
+            //Application.Run(new Principal0());
         }
     }
 }
