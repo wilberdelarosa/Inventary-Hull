@@ -39,7 +39,7 @@ namespace Inventary_Hull
         }
         private void agrproducto_Load(object sender, EventArgs e)
         {
-        
+
         }
         #region Metodo POPULATE Combobox seccion
         private void PopulateCategoriaComboBox()

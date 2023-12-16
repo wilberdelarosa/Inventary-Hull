@@ -168,5 +168,10 @@ namespace Inventary_Hull
 
             principal0.ShowDialog();
         }
+
+        private void iconPictureBox2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

@@ -46,7 +46,8 @@
             btnsub1producto = new Button();
             btnentrada = new FontAwesome.Sharp.IconButton();
             panelLogo = new Panel();
-            iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
+            label1 = new Label();
+            iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
             lbltitulo2 = new Label();
             lbltitulo1 = new Label();
             pictureBox1 = new PictureBox();
@@ -60,7 +61,7 @@
             panelsubmenuproceso.SuspendLayout();
             Panelsubmenuentrada.SuspendLayout();
             panelLogo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)iconPictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)iconPictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             PanelChildForm.SuspendLayout();
             panel1.SuspendLayout();
@@ -374,7 +375,8 @@
             // panelLogo
             // 
             panelLogo.AutoScroll = true;
-            panelLogo.Controls.Add(iconPictureBox1);
+            panelLogo.Controls.Add(label1);
+            panelLogo.Controls.Add(iconPictureBox2);
             panelLogo.Controls.Add(lbltitulo2);
             panelLogo.Controls.Add(lbltitulo1);
             panelLogo.Controls.Add(pictureBox1);
@@ -384,20 +386,31 @@
             panelLogo.Size = new Size(258, 134);
             panelLogo.TabIndex = 1;
             // 
-            // iconPictureBox1
+            // label1
             // 
-            iconPictureBox1.BackColor = Color.OrangeRed;
-            iconPictureBox1.ForeColor = SystemColors.ControlLightLight;
-            iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.DoorOpen;
-            iconPictureBox1.IconColor = SystemColors.ControlLightLight;
-            iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconPictureBox1.IconSize = 36;
-            iconPictureBox1.Location = new Point(208, 12);
-            iconPictureBox1.Name = "iconPictureBox1";
-            iconPictureBox1.Size = new Size(36, 40);
-            iconPictureBox1.TabIndex = 4;
-            iconPictureBox1.TabStop = false;
-            iconPictureBox1.Click += iconPictureBox1_Click;
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.ForeColor = SystemColors.ButtonFace;
+            label1.Location = new Point(161, 10);
+            label1.Name = "label1";
+            label1.Size = new Size(41, 20);
+            label1.TabIndex = 5;
+            label1.Text = "EXIT";
+            // 
+            // iconPictureBox2
+            // 
+            iconPictureBox2.BackColor = Color.FromArgb(31, 30, 68);
+            iconPictureBox2.ForeColor = Color.OrangeRed;
+            iconPictureBox2.IconChar = FontAwesome.Sharp.IconChar.DoorOpen;
+            iconPictureBox2.IconColor = Color.OrangeRed;
+            iconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            iconPictureBox2.IconSize = 40;
+            iconPictureBox2.Location = new Point(208, 3);
+            iconPictureBox2.Name = "iconPictureBox2";
+            iconPictureBox2.Size = new Size(40, 40);
+            iconPictureBox2.TabIndex = 4;
+            iconPictureBox2.TabStop = false;
+            iconPictureBox2.Click += iconPictureBox2_Click;
             // 
             // lbltitulo2
             // 
@@ -448,6 +461,7 @@
             // 
             // panel1
             // 
+            panel1.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             panel1.BackColor = Color.Snow;
             panel1.Controls.Add(pictureBox2);
             panel1.Location = new Point(0, 373);
@@ -490,6 +504,7 @@
             Name = "Principal0";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "INVENTORY HALL";
+            WindowState = FormWindowState.Maximized;
             Load += Principal0_Load;
             Panelmenuprincipal.ResumeLayout(false);
             panelsubmenusistema.ResumeLayout(false);
@@ -498,7 +513,7 @@
             Panelsubmenuentrada.ResumeLayout(false);
             panelLogo.ResumeLayout(false);
             panelLogo.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)iconPictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)iconPictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             PanelChildForm.ResumeLayout(false);
             panel1.ResumeLayout(false);
@@ -534,6 +549,7 @@
         private PictureBox pictureBox2;
         private PictureBox pictureBox4;
         private Panel panel1;
-        private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
+        private FontAwesome.Sharp.IconPictureBox iconPictureBox2;
+        private Label label1;
     }
 }
