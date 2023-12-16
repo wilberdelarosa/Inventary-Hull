@@ -16,5 +16,10 @@ namespace Inventary_Hull
         {
             InitializeComponent();
         }
+
+        private void richTextBoxacercade_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

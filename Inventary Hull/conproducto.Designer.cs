@@ -34,6 +34,7 @@
             refreshbtn = new Button();
             buscarLB = new Label();
             consultadeproductoLB = new Label();
+            sqlCommand1 = new Microsoft.Data.SqlClient.SqlCommand();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -95,6 +96,11 @@
             consultadeproductoLB.TabIndex = 5;
             consultadeproductoLB.Text = "Consulta de Producto";
             // 
+            // sqlCommand1
+            // 
+            sqlCommand1.CommandTimeout = 30;
+            sqlCommand1.EnableOptimizedParameterBinding = false;
+            // 
             // conproducto
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -122,5 +128,6 @@
         private Button refreshbtn;
         private Label buscarLB;
         private Label consultadeproductoLB;
+        private Microsoft.Data.SqlClient.SqlCommand sqlCommand1;
     }
 }

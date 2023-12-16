@@ -207,7 +207,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 497);
+            ClientSize = new Size(803, 506);
             Controls.Add(secciontxt);
             Controls.Add(guardarbtn);
             Controls.Add(insertarbtn);

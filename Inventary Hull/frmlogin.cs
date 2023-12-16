@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
-using System.Drawing;
+
 
 namespace Inventary_Hull
 {
@@ -48,6 +48,9 @@ namespace Inventary_Hull
         }
         private void SetActiveButton(Button button)
         {
+
+          
+            //sim hay un boton lo pone gris
             if (activeButton != null)
             {
                 activeButton.BackColor = Color.Gray; // Color original o inactivo

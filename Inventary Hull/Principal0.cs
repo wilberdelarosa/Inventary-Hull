@@ -121,11 +121,13 @@ namespace Inventary_Hull
             OpenChildForm(new agrproducto());
             HideSubmenu();
         }
+        private Form activeForm = null;
         private void OpenChildForm(Form childForm)
         {
             if (currentForm != null)
             {
                 currentForm.Close();
+                activeForm = childForm;
             }
             currentForm = childForm;
             childForm.TopLevel = false;
@@ -139,7 +141,7 @@ namespace Inventary_Hull
 
         private void PanelChildForm_Paint(object sender, PaintEventArgs e)
         {
-            
+
         }
     }
 }

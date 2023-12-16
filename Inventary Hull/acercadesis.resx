@@ -117,4 +117,35 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="richTextBoxacercade.Text" xml:space="preserve">
+    <value>Software de Control de Inventario
+
+Desarrollador: Wilber De La Rosa
+Código de Estudiante: 2022-0547
+Fecha de Creación: 16/12/2023
+
+Herramientas Utilizadas:
+
+-SQL Server: Versión 2019
+-IDE: Visual Studio Community 2022
+-Frameworks: .NET 7
+-Lenguaje de Programación: C#
+
+Descripción del Programa:
+
+Este software de control de inventario ofrece una solución integral para la gestión de productos, suplidores y empleados. Sus funcionalidades clave incluyen:
+
+Registro y Gestión de Productos: Permite la entrada y actualización de datos de productos, incluyendo su distribución y categorización.
+Administración de Suplidores: Facilita el manejo de información relacionada con los proveedores de los productos.
+Gestión de Empleados: Proporciona herramientas para el registro y mantenimiento de datos de los empleados.
+Características Adicionales:
+
+-Consulta y Modificación de Datos: El programa permite consultar y modificar la información de productos, suplidores y empleados de manera eficiente.
+
+-Interfaz de Usuario Intuitiva: Diseñada para facilitar la navegación y el uso del sistema por parte de los usuarios.
+
+Objetivo del Proyecto:
+
+Este software fue desarrollado como proyecto final para la materia Programación Básica (ISW-122-50), demostrando la aplicación práctica de los conocimientos adquiridos en el curso.</value>
+  </data>
 </root>

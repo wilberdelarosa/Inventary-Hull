@@ -40,20 +40,22 @@
             // 
             // dataGridView1
             // 
+            dataGridView1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(12, 58);
+            dataGridView1.Location = new Point(-1, 52);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 29;
-            dataGridView1.Size = new Size(776, 278);
+            dataGridView1.Size = new Size(805, 308);
             dataGridView1.TabIndex = 0;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
             // distribuciondecategoriaLB
             // 
+            distribuciondecategoriaLB.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             distribuciondecategoriaLB.AutoSize = true;
             distribuciondecategoriaLB.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            distribuciondecategoriaLB.Location = new Point(213, 9);
+            distribuciondecategoriaLB.Location = new Point(229, 9);
             distribuciondecategoriaLB.Name = "distribuciondecategoriaLB";
             distribuciondecategoriaLB.Size = new Size(299, 28);
             distribuciondecategoriaLB.TabIndex = 1;
@@ -61,8 +63,9 @@
             // 
             // comboBoxProductIDs
             // 
+            comboBoxProductIDs.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             comboBoxProductIDs.FormattingEnabled = true;
-            comboBoxProductIDs.Location = new Point(79, 391);
+            comboBoxProductIDs.Location = new Point(177, 466);
             comboBoxProductIDs.Name = "comboBoxProductIDs";
             comboBoxProductIDs.Size = new Size(151, 28);
             comboBoxProductIDs.TabIndex = 2;
@@ -70,14 +73,16 @@
             // 
             // textBoxNewSeccion
             // 
-            textBoxNewSeccion.Location = new Point(387, 391);
+            textBoxNewSeccion.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            textBoxNewSeccion.Location = new Point(356, 467);
             textBoxNewSeccion.Name = "textBoxNewSeccion";
             textBoxNewSeccion.Size = new Size(125, 27);
             textBoxNewSeccion.TabIndex = 3;
             // 
             // buttonseccionupdate
             // 
-            buttonseccionupdate.Location = new Point(259, 454);
+            buttonseccionupdate.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            buttonseccionupdate.Location = new Point(522, 467);
             buttonseccionupdate.Name = "buttonseccionupdate";
             buttonseccionupdate.Size = new Size(94, 29);
             buttonseccionupdate.TabIndex = 4;
@@ -87,8 +92,9 @@
             // 
             // nuevaseccionLB
             // 
+            nuevaseccionLB.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             nuevaseccionLB.AutoSize = true;
-            nuevaseccionLB.Location = new Point(392, 349);
+            nuevaseccionLB.Location = new Point(361, 427);
             nuevaseccionLB.Name = "nuevaseccionLB";
             nuevaseccionLB.Size = new Size(120, 20);
             nuevaseccionLB.TabIndex = 5;
@@ -96,8 +102,9 @@
             // 
             // idproductoLB
             // 
+            idproductoLB.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             idproductoLB.AutoSize = true;
-            idproductoLB.Location = new Point(113, 349);
+            idproductoLB.Location = new Point(200, 427);
             idproductoLB.Name = "idproductoLB";
             idproductoLB.Size = new Size(104, 20);
             idproductoLB.TabIndex = 6;

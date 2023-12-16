@@ -50,6 +50,7 @@
             lbltitulo1 = new Label();
             pictureBox1 = new PictureBox();
             PanelChildForm = new Panel();
+            panel1 = new Panel();
             pictureBox2 = new PictureBox();
             pictureBox4 = new PictureBox();
             Panelmenuprincipal.SuspendLayout();
@@ -60,6 +61,7 @@
             panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             PanelChildForm.SuspendLayout();
+            panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             SuspendLayout();
@@ -88,7 +90,7 @@
             panelsubmenusistema.BackColor = Color.MediumBlue;
             panelsubmenusistema.Controls.Add(btnsub4acercade);
             panelsubmenusistema.Dock = DockStyle.Top;
-            panelsubmenusistema.Location = new Point(0, 548);
+            panelsubmenusistema.Location = new Point(0, 551);
             panelsubmenusistema.Name = "panelsubmenusistema";
             panelsubmenusistema.Size = new Size(237, 45);
             panelsubmenusistema.TabIndex = 7;
@@ -119,16 +121,18 @@
             btnsistema.FlatAppearance.MouseOverBackColor = Color.Blue;
             btnsistema.FlatStyle = FlatStyle.Flat;
             btnsistema.ForeColor = SystemColors.ButtonHighlight;
-            btnsistema.IconChar = FontAwesome.Sharp.IconChar.None;
-            btnsistema.IconColor = Color.Black;
+            btnsistema.IconChar = FontAwesome.Sharp.IconChar.Scroll;
+            btnsistema.IconColor = Color.OrangeRed;
             btnsistema.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            btnsistema.Location = new Point(0, 508);
+            btnsistema.IconSize = 30;
+            btnsistema.ImageAlign = ContentAlignment.MiddleLeft;
+            btnsistema.Location = new Point(0, 511);
             btnsistema.Name = "btnsistema";
             btnsistema.Padding = new Padding(10, 0, 0, 0);
             btnsistema.Size = new Size(237, 40);
             btnsistema.TabIndex = 6;
             btnsistema.Text = "SISTEMA";
-            btnsistema.TextAlign = ContentAlignment.MiddleLeft;
+            btnsistema.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnsistema.UseVisualStyleBackColor = true;
             btnsistema.Click += btnsistema_Click;
             // 
@@ -139,7 +143,7 @@
             panelsubmenuconsulta.Controls.Add(btnsub3empelado);
             panelsubmenuconsulta.Controls.Add(btnsub3producto);
             panelsubmenuconsulta.Dock = DockStyle.Top;
-            panelsubmenuconsulta.Location = new Point(0, 383);
+            panelsubmenuconsulta.Location = new Point(0, 386);
             panelsubmenuconsulta.Name = "panelsubmenuconsulta";
             panelsubmenuconsulta.Size = new Size(237, 125);
             panelsubmenuconsulta.TabIndex = 5;
@@ -206,16 +210,19 @@
             btnconsulta.FlatAppearance.MouseOverBackColor = Color.Blue;
             btnconsulta.FlatStyle = FlatStyle.Flat;
             btnconsulta.ForeColor = SystemColors.ButtonHighlight;
-            btnconsulta.IconChar = FontAwesome.Sharp.IconChar.None;
-            btnconsulta.IconColor = Color.Black;
+            btnconsulta.IconChar = FontAwesome.Sharp.IconChar.BoxesAlt;
+            btnconsulta.IconColor = Color.OrangeRed;
             btnconsulta.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            btnconsulta.Location = new Point(0, 343);
+            btnconsulta.IconSize = 30;
+            btnconsulta.ImageAlign = ContentAlignment.MiddleLeft;
+            btnconsulta.Location = new Point(0, 346);
             btnconsulta.Name = "btnconsulta";
             btnconsulta.Padding = new Padding(10, 0, 0, 0);
             btnconsulta.Size = new Size(237, 40);
             btnconsulta.TabIndex = 4;
             btnconsulta.Text = "CONSULTA";
             btnconsulta.TextAlign = ContentAlignment.MiddleLeft;
+            btnconsulta.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnconsulta.UseVisualStyleBackColor = true;
             btnconsulta.Click += btnconsulta_Click;
             // 
@@ -224,7 +231,7 @@
             panelsubmenuproceso.BackColor = Color.MediumBlue;
             panelsubmenuproceso.Controls.Add(btnsub2disart);
             panelsubmenuproceso.Dock = DockStyle.Top;
-            panelsubmenuproceso.Location = new Point(0, 299);
+            panelsubmenuproceso.Location = new Point(0, 302);
             panelsubmenuproceso.Name = "panelsubmenuproceso";
             panelsubmenuproceso.Size = new Size(237, 44);
             panelsubmenuproceso.TabIndex = 3;
@@ -240,7 +247,7 @@
             btnsub2disart.Location = new Point(0, 0);
             btnsub2disart.Name = "btnsub2disart";
             btnsub2disart.Padding = new Padding(35, 0, 0, 0);
-            btnsub2disart.Size = new Size(237, 40);
+            btnsub2disart.Size = new Size(237, 44);
             btnsub2disart.TabIndex = 1;
             btnsub2disart.Text = "DISTRIBUCION DE ARTICULO";
             btnsub2disart.TextAlign = ContentAlignment.MiddleLeft;
@@ -255,16 +262,19 @@
             btnproceso.FlatAppearance.MouseOverBackColor = Color.Blue;
             btnproceso.FlatStyle = FlatStyle.Flat;
             btnproceso.ForeColor = SystemColors.ButtonHighlight;
-            btnproceso.IconChar = FontAwesome.Sharp.IconChar.None;
-            btnproceso.IconColor = Color.Black;
+            btnproceso.IconChar = FontAwesome.Sharp.IconChar.Toolbox;
+            btnproceso.IconColor = Color.OrangeRed;
             btnproceso.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            btnproceso.Location = new Point(0, 259);
+            btnproceso.IconSize = 30;
+            btnproceso.ImageAlign = ContentAlignment.MiddleLeft;
+            btnproceso.Location = new Point(0, 262);
             btnproceso.Name = "btnproceso";
             btnproceso.Padding = new Padding(10, 0, 0, 0);
             btnproceso.Size = new Size(237, 40);
             btnproceso.TabIndex = 2;
             btnproceso.Text = "PROCESO";
             btnproceso.TextAlign = ContentAlignment.MiddleLeft;
+            btnproceso.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnproceso.UseVisualStyleBackColor = true;
             btnproceso.Click += btnproceso_Click;
             // 
@@ -277,7 +287,7 @@
             Panelsubmenuentrada.Dock = DockStyle.Top;
             Panelsubmenuentrada.Location = new Point(0, 134);
             Panelsubmenuentrada.Name = "Panelsubmenuentrada";
-            Panelsubmenuentrada.Size = new Size(237, 125);
+            Panelsubmenuentrada.Size = new Size(237, 128);
             Panelsubmenuentrada.TabIndex = 1;
             Panelsubmenuentrada.Paint += Panelsubmenuentrada_Paint;
             // 
@@ -337,15 +347,17 @@
             // 
             // btnentrada
             // 
-            btnentrada.Dock = DockStyle.Top;
+            btnentrada.Anchor = AnchorStyles.Top;
             btnentrada.FlatAppearance.BorderSize = 0;
             btnentrada.FlatAppearance.MouseDownBackColor = Color.White;
             btnentrada.FlatAppearance.MouseOverBackColor = Color.Blue;
             btnentrada.FlatStyle = FlatStyle.Flat;
             btnentrada.ForeColor = SystemColors.ButtonHighlight;
-            btnentrada.IconChar = FontAwesome.Sharp.IconChar.None;
-            btnentrada.IconColor = Color.Black;
-            btnentrada.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btnentrada.IconChar = FontAwesome.Sharp.IconChar.BoxOpen;
+            btnentrada.IconColor = Color.OrangeRed;
+            btnentrada.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            btnentrada.IconSize = 30;
+            btnentrada.ImageAlign = ContentAlignment.MiddleLeft;
             btnentrada.Location = new Point(0, 94);
             btnentrada.Name = "btnentrada";
             btnentrada.Padding = new Padding(10, 0, 0, 0);
@@ -353,6 +365,7 @@
             btnentrada.TabIndex = 1;
             btnentrada.Text = "ENTRADA";
             btnentrada.TextAlign = ContentAlignment.MiddleLeft;
+            btnentrada.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnentrada.UseVisualStyleBackColor = true;
             btnentrada.Click += btnentrada_Click;
             // 
@@ -364,7 +377,7 @@
             panelLogo.Dock = DockStyle.Top;
             panelLogo.Location = new Point(0, 0);
             panelLogo.Name = "panelLogo";
-            panelLogo.Size = new Size(237, 94);
+            panelLogo.Size = new Size(237, 134);
             panelLogo.TabIndex = 1;
             // 
             // lbltitulo2
@@ -402,7 +415,7 @@
             // PanelChildForm
             // 
             PanelChildForm.BackColor = Color.OrangeRed;
-            PanelChildForm.Controls.Add(pictureBox2);
+            PanelChildForm.Controls.Add(panel1);
             PanelChildForm.Controls.Add(pictureBox4);
             PanelChildForm.Dock = DockStyle.Fill;
             PanelChildForm.Location = new Point(258, 0);
@@ -411,10 +424,20 @@
             PanelChildForm.TabIndex = 1;
             PanelChildForm.Paint += PanelChildForm_Paint;
             // 
+            // panel1
+            // 
+            panel1.BackColor = Color.Snow;
+            panel1.Controls.Add(pictureBox2);
+            panel1.Location = new Point(-25, 345);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(865, 215);
+            panel1.TabIndex = 3;
+            // 
             // pictureBox2
             // 
+            pictureBox2.Anchor = AnchorStyles.None;
             pictureBox2.Image = Properties.Resources.inventory_logoo_04;
-            pictureBox2.Location = new Point(274, 343);
+            pictureBox2.Location = new Point(308, -2);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(233, 239);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
@@ -423,6 +446,7 @@
             // 
             // pictureBox4
             // 
+            pictureBox4.Anchor = AnchorStyles.None;
             pictureBox4.Image = Properties.Resources.tipografia_3;
             pictureBox4.Location = new Point(221, -23);
             pictureBox4.Name = "pictureBox4";
@@ -452,6 +476,7 @@
             panelLogo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             PanelChildForm.ResumeLayout(false);
+            panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ResumeLayout(false);
@@ -483,5 +508,6 @@
         private Panel PanelChildForm;
         private PictureBox pictureBox2;
         private PictureBox pictureBox4;
+        private Panel panel1;
     }
 }
