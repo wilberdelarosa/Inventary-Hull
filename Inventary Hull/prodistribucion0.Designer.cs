@@ -40,13 +40,13 @@
             // 
             // dataGridView1
             // 
-            dataGridView1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            dataGridView1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Location = new Point(-1, 52);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 29;
-            dataGridView1.Size = new Size(805, 308);
+            dataGridView1.Size = new Size(805, 357);
             dataGridView1.TabIndex = 0;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
@@ -82,21 +82,26 @@
             // buttonseccionupdate
             // 
             buttonseccionupdate.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            buttonseccionupdate.BackColor = Color.OrangeRed;
+            buttonseccionupdate.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            buttonseccionupdate.ForeColor = SystemColors.ButtonFace;
             buttonseccionupdate.Location = new Point(522, 467);
             buttonseccionupdate.Name = "buttonseccionupdate";
             buttonseccionupdate.Size = new Size(94, 29);
             buttonseccionupdate.TabIndex = 4;
             buttonseccionupdate.Text = "Actualizar";
-            buttonseccionupdate.UseVisualStyleBackColor = true;
+            buttonseccionupdate.UseVisualStyleBackColor = false;
             buttonseccionupdate.Click += buttonseccionupdate_Click;
             // 
             // nuevaseccionLB
             // 
             nuevaseccionLB.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             nuevaseccionLB.AutoSize = true;
+            nuevaseccionLB.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            nuevaseccionLB.ForeColor = SystemColors.ActiveCaptionText;
             nuevaseccionLB.Location = new Point(361, 427);
             nuevaseccionLB.Name = "nuevaseccionLB";
-            nuevaseccionLB.Size = new Size(120, 20);
+            nuevaseccionLB.Size = new Size(126, 20);
             nuevaseccionLB.TabIndex = 5;
             nuevaseccionLB.Text = "NUEVA SECCION";
             // 
@@ -104,9 +109,10 @@
             // 
             idproductoLB.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             idproductoLB.AutoSize = true;
+            idproductoLB.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             idproductoLB.Location = new Point(200, 427);
             idproductoLB.Name = "idproductoLB";
-            idproductoLB.Size = new Size(104, 20);
+            idproductoLB.Size = new Size(125, 23);
             idproductoLB.TabIndex = 6;
             idproductoLB.Text = "ID PRODUCTO";
             // 
