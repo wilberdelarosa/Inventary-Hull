@@ -136,6 +136,7 @@ namespace Inventary_Hull
             principal0.Show();
             MessageBox.Show(welcomeMessage);
             this.Hide();
+            
         }
         private void txtusuario_TextChanged(object sender, EventArgs e)
         {

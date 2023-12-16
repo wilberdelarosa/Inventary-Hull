@@ -46,6 +46,7 @@
             btnsub1producto = new Button();
             btnentrada = new FontAwesome.Sharp.IconButton();
             panelLogo = new Panel();
+            iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             lbltitulo2 = new Label();
             lbltitulo1 = new Label();
             pictureBox1 = new PictureBox();
@@ -59,6 +60,7 @@
             panelsubmenuproceso.SuspendLayout();
             Panelsubmenuentrada.SuspendLayout();
             panelLogo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)iconPictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             PanelChildForm.SuspendLayout();
             panel1.SuspendLayout();
@@ -82,7 +84,7 @@
             Panelmenuprincipal.Dock = DockStyle.Left;
             Panelmenuprincipal.Location = new Point(0, 0);
             Panelmenuprincipal.Name = "Panelmenuprincipal";
-            Panelmenuprincipal.Size = new Size(258, 553);
+            Panelmenuprincipal.Size = new Size(258, 600);
             Panelmenuprincipal.TabIndex = 0;
             // 
             // panelsubmenusistema
@@ -92,7 +94,7 @@
             panelsubmenusistema.Dock = DockStyle.Top;
             panelsubmenusistema.Location = new Point(0, 551);
             panelsubmenusistema.Name = "panelsubmenusistema";
-            panelsubmenusistema.Size = new Size(237, 45);
+            panelsubmenusistema.Size = new Size(258, 45);
             panelsubmenusistema.TabIndex = 7;
             // 
             // btnsub4acercade
@@ -106,7 +108,7 @@
             btnsub4acercade.Location = new Point(0, 0);
             btnsub4acercade.Name = "btnsub4acercade";
             btnsub4acercade.Padding = new Padding(35, 0, 0, 0);
-            btnsub4acercade.Size = new Size(237, 40);
+            btnsub4acercade.Size = new Size(258, 40);
             btnsub4acercade.TabIndex = 3;
             btnsub4acercade.Text = "ACERCA DEL SISTEMA";
             btnsub4acercade.TextAlign = ContentAlignment.MiddleLeft;
@@ -129,7 +131,7 @@
             btnsistema.Location = new Point(0, 511);
             btnsistema.Name = "btnsistema";
             btnsistema.Padding = new Padding(10, 0, 0, 0);
-            btnsistema.Size = new Size(237, 40);
+            btnsistema.Size = new Size(258, 40);
             btnsistema.TabIndex = 6;
             btnsistema.Text = "SISTEMA";
             btnsistema.TextImageRelation = TextImageRelation.ImageBeforeText;
@@ -145,7 +147,7 @@
             panelsubmenuconsulta.Dock = DockStyle.Top;
             panelsubmenuconsulta.Location = new Point(0, 386);
             panelsubmenuconsulta.Name = "panelsubmenuconsulta";
-            panelsubmenuconsulta.Size = new Size(237, 125);
+            panelsubmenuconsulta.Size = new Size(258, 125);
             panelsubmenuconsulta.TabIndex = 5;
             // 
             // btnsub3suplidor
@@ -159,7 +161,7 @@
             btnsub3suplidor.Location = new Point(0, 80);
             btnsub3suplidor.Name = "btnsub3suplidor";
             btnsub3suplidor.Padding = new Padding(35, 0, 0, 0);
-            btnsub3suplidor.Size = new Size(237, 40);
+            btnsub3suplidor.Size = new Size(258, 40);
             btnsub3suplidor.TabIndex = 3;
             btnsub3suplidor.Text = "CONSULTA SUPLIDOR";
             btnsub3suplidor.TextAlign = ContentAlignment.MiddleLeft;
@@ -177,7 +179,7 @@
             btnsub3empelado.Location = new Point(0, 40);
             btnsub3empelado.Name = "btnsub3empelado";
             btnsub3empelado.Padding = new Padding(35, 0, 0, 0);
-            btnsub3empelado.Size = new Size(237, 40);
+            btnsub3empelado.Size = new Size(258, 40);
             btnsub3empelado.TabIndex = 2;
             btnsub3empelado.Text = "CONSULTA EMPLEADO";
             btnsub3empelado.TextAlign = ContentAlignment.MiddleLeft;
@@ -195,7 +197,7 @@
             btnsub3producto.Location = new Point(0, 0);
             btnsub3producto.Name = "btnsub3producto";
             btnsub3producto.Padding = new Padding(35, 0, 0, 0);
-            btnsub3producto.Size = new Size(237, 40);
+            btnsub3producto.Size = new Size(258, 40);
             btnsub3producto.TabIndex = 1;
             btnsub3producto.Text = "CONSULTA PRODUCTO";
             btnsub3producto.TextAlign = ContentAlignment.MiddleLeft;
@@ -218,7 +220,7 @@
             btnconsulta.Location = new Point(0, 346);
             btnconsulta.Name = "btnconsulta";
             btnconsulta.Padding = new Padding(10, 0, 0, 0);
-            btnconsulta.Size = new Size(237, 40);
+            btnconsulta.Size = new Size(258, 40);
             btnconsulta.TabIndex = 4;
             btnconsulta.Text = "CONSULTA";
             btnconsulta.TextAlign = ContentAlignment.MiddleLeft;
@@ -233,7 +235,7 @@
             panelsubmenuproceso.Dock = DockStyle.Top;
             panelsubmenuproceso.Location = new Point(0, 302);
             panelsubmenuproceso.Name = "panelsubmenuproceso";
-            panelsubmenuproceso.Size = new Size(237, 44);
+            panelsubmenuproceso.Size = new Size(258, 44);
             panelsubmenuproceso.TabIndex = 3;
             // 
             // btnsub2disart
@@ -247,7 +249,7 @@
             btnsub2disart.Location = new Point(0, 0);
             btnsub2disart.Name = "btnsub2disart";
             btnsub2disart.Padding = new Padding(35, 0, 0, 0);
-            btnsub2disart.Size = new Size(237, 44);
+            btnsub2disart.Size = new Size(258, 44);
             btnsub2disart.TabIndex = 1;
             btnsub2disart.Text = "DISTRIBUCION DE ARTICULO";
             btnsub2disart.TextAlign = ContentAlignment.MiddleLeft;
@@ -270,7 +272,7 @@
             btnproceso.Location = new Point(0, 262);
             btnproceso.Name = "btnproceso";
             btnproceso.Padding = new Padding(10, 0, 0, 0);
-            btnproceso.Size = new Size(237, 40);
+            btnproceso.Size = new Size(258, 40);
             btnproceso.TabIndex = 2;
             btnproceso.Text = "PROCESO";
             btnproceso.TextAlign = ContentAlignment.MiddleLeft;
@@ -287,7 +289,7 @@
             Panelsubmenuentrada.Dock = DockStyle.Top;
             Panelsubmenuentrada.Location = new Point(0, 134);
             Panelsubmenuentrada.Name = "Panelsubmenuentrada";
-            Panelsubmenuentrada.Size = new Size(237, 128);
+            Panelsubmenuentrada.Size = new Size(258, 128);
             Panelsubmenuentrada.TabIndex = 1;
             Panelsubmenuentrada.Paint += Panelsubmenuentrada_Paint;
             // 
@@ -302,7 +304,7 @@
             btnsub1suplidor.Location = new Point(0, 80);
             btnsub1suplidor.Name = "btnsub1suplidor";
             btnsub1suplidor.Padding = new Padding(35, 0, 0, 0);
-            btnsub1suplidor.Size = new Size(237, 40);
+            btnsub1suplidor.Size = new Size(258, 40);
             btnsub1suplidor.TabIndex = 3;
             btnsub1suplidor.Text = "SUPLIDOR";
             btnsub1suplidor.TextAlign = ContentAlignment.MiddleLeft;
@@ -320,7 +322,7 @@
             btnsub1empleado.Location = new Point(0, 40);
             btnsub1empleado.Name = "btnsub1empleado";
             btnsub1empleado.Padding = new Padding(35, 0, 0, 0);
-            btnsub1empleado.Size = new Size(237, 40);
+            btnsub1empleado.Size = new Size(258, 40);
             btnsub1empleado.TabIndex = 2;
             btnsub1empleado.Text = "EMPLEADO";
             btnsub1empleado.TextAlign = ContentAlignment.MiddleLeft;
@@ -338,7 +340,7 @@
             btnsub1producto.Location = new Point(0, 0);
             btnsub1producto.Name = "btnsub1producto";
             btnsub1producto.Padding = new Padding(35, 0, 0, 0);
-            btnsub1producto.Size = new Size(237, 40);
+            btnsub1producto.Size = new Size(258, 40);
             btnsub1producto.TabIndex = 1;
             btnsub1producto.Text = "PRODUCTO";
             btnsub1producto.TextAlign = ContentAlignment.MiddleLeft;
@@ -358,7 +360,7 @@
             btnentrada.IconFont = FontAwesome.Sharp.IconFont.Solid;
             btnentrada.IconSize = 30;
             btnentrada.ImageAlign = ContentAlignment.MiddleLeft;
-            btnentrada.Location = new Point(0, 94);
+            btnentrada.Location = new Point(11, 94);
             btnentrada.Name = "btnentrada";
             btnentrada.Padding = new Padding(10, 0, 0, 0);
             btnentrada.Size = new Size(237, 40);
@@ -371,14 +373,31 @@
             // 
             // panelLogo
             // 
+            panelLogo.AutoScroll = true;
+            panelLogo.Controls.Add(iconPictureBox1);
             panelLogo.Controls.Add(lbltitulo2);
             panelLogo.Controls.Add(lbltitulo1);
             panelLogo.Controls.Add(pictureBox1);
             panelLogo.Dock = DockStyle.Top;
             panelLogo.Location = new Point(0, 0);
             panelLogo.Name = "panelLogo";
-            panelLogo.Size = new Size(237, 134);
+            panelLogo.Size = new Size(258, 134);
             panelLogo.TabIndex = 1;
+            // 
+            // iconPictureBox1
+            // 
+            iconPictureBox1.BackColor = Color.OrangeRed;
+            iconPictureBox1.ForeColor = SystemColors.ControlLightLight;
+            iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.DoorOpen;
+            iconPictureBox1.IconColor = SystemColors.ControlLightLight;
+            iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            iconPictureBox1.IconSize = 36;
+            iconPictureBox1.Location = new Point(208, 12);
+            iconPictureBox1.Name = "iconPictureBox1";
+            iconPictureBox1.Size = new Size(36, 40);
+            iconPictureBox1.TabIndex = 4;
+            iconPictureBox1.TabStop = false;
+            iconPictureBox1.Click += iconPictureBox1_Click;
             // 
             // lbltitulo2
             // 
@@ -394,6 +413,7 @@
             // lbltitulo1
             // 
             lbltitulo1.AutoSize = true;
+            lbltitulo1.FlatStyle = FlatStyle.System;
             lbltitulo1.Font = new Font("Bauhaus 93", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             lbltitulo1.ForeColor = SystemColors.ControlLightLight;
             lbltitulo1.Location = new Point(67, 43);
@@ -401,6 +421,7 @@
             lbltitulo1.Size = new Size(135, 26);
             lbltitulo1.TabIndex = 2;
             lbltitulo1.Text = "INVENTORY";
+            lbltitulo1.Click += lbltitulo1_Click;
             // 
             // pictureBox1
             // 
@@ -411,6 +432,7 @@
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // PanelChildForm
             // 
@@ -420,7 +442,7 @@
             PanelChildForm.Dock = DockStyle.Fill;
             PanelChildForm.Location = new Point(258, 0);
             PanelChildForm.Name = "PanelChildForm";
-            PanelChildForm.Size = new Size(821, 553);
+            PanelChildForm.Size = new Size(821, 600);
             PanelChildForm.TabIndex = 1;
             PanelChildForm.Paint += PanelChildForm_Paint;
             // 
@@ -428,16 +450,17 @@
             // 
             panel1.BackColor = Color.Snow;
             panel1.Controls.Add(pictureBox2);
-            panel1.Location = new Point(-25, 345);
+            panel1.Location = new Point(0, 373);
             panel1.Name = "panel1";
-            panel1.Size = new Size(865, 215);
+            panel1.Size = new Size(821, 227);
             panel1.TabIndex = 3;
+            panel1.Paint += panel1_Paint;
             // 
             // pictureBox2
             // 
             pictureBox2.Anchor = AnchorStyles.None;
             pictureBox2.Image = Properties.Resources.inventory_logoo_04;
-            pictureBox2.Location = new Point(308, -2);
+            pictureBox2.Location = new Point(286, 4);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(233, 239);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
@@ -448,7 +471,7 @@
             // 
             pictureBox4.Anchor = AnchorStyles.None;
             pictureBox4.Image = Properties.Resources.tipografia_3;
-            pictureBox4.Location = new Point(221, -23);
+            pictureBox4.Location = new Point(221, 1);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(372, 406);
             pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
@@ -459,9 +482,10 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1079, 553);
+            ClientSize = new Size(1079, 600);
             Controls.Add(PanelChildForm);
             Controls.Add(Panelmenuprincipal);
+            FormBorderStyle = FormBorderStyle.None;
             MinimumSize = new Size(950, 600);
             Name = "Principal0";
             StartPosition = FormStartPosition.CenterScreen;
@@ -474,6 +498,7 @@
             Panelsubmenuentrada.ResumeLayout(false);
             panelLogo.ResumeLayout(false);
             panelLogo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)iconPictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             PanelChildForm.ResumeLayout(false);
             panel1.ResumeLayout(false);
@@ -509,5 +534,6 @@
         private PictureBox pictureBox2;
         private PictureBox pictureBox4;
         private Panel panel1;
+        private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
     }
 }

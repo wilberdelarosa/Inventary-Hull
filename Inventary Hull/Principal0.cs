@@ -143,5 +143,30 @@ namespace Inventary_Hull
         {
 
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void iconPictureBox1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+
+        }
+
+        private void lbltitulo1_Click(object sender, EventArgs e)
+        {
+            Principal0 principal0 = new Principal0();
+
+            principal0.ShowDialog();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Principal0 principal0 = new Principal0();
+
+            principal0.ShowDialog();
+        }
     }
 }

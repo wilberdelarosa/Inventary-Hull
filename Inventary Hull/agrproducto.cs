@@ -72,7 +72,7 @@ namespace Inventary_Hull
             finally
             {
                 // cerrar la conexión aquí.
-                databaseManager.CloseConnection();
+                //databaseManager.CloseConnection();
             }
 
         }
